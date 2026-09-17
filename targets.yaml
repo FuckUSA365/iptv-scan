@@ -12,8 +12,8 @@ targets:
   - name: "站点A"
     base_url: "http://45.192.97.170:8880/play/70.m3u8"
     template: "http://45.192.97.170:8880/play/{id}.m3u8"
-    start: 1
-    end: 300
+    start: 70
+    end: 70
 
   # 简洁：指出替换第几段数字（排除IP/端口）
   # - name: "站点B"
