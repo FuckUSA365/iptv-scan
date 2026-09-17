@@ -1,0 +1,66 @@
+name: IPTV Channel Scanner
+
+on:
+  workflow_dispatch:
+    inputs:
+      strict:
+        description: '严格模式（只输出分片级验证通过的频道）'
+        type: boolean
+        default: false
+  push:
+    paths:
+      - 'targets.yaml'
+      - 'channel_map.yaml'
+      - 'scanner.py'
+  schedule:
+    - cron: '0 2 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 安装依赖
+        run: pip install -r requirements.txt
+
+      - name: 运行扫描
+        run: |
+          STRICT_FLAG=""
+          if [ "${{ github.event.inputs.strict }}" = "true" ]; then
+            STRICT_FLAG="--strict"
+          fi
+          python scanner.py \
+            --config targets.yaml \
+            --channel-map channel_map.yaml \
+            --output output/playlist.m3u \
+            --report output/scan_report.json \
+            $STRICT_FLAG
+
+      - name: 上传结果
+        uses: actions/upload-artifact@v4
+        with:
+          name: iptv-playlist-${{ github.run_number }}
+          path: |
+            output/playlist.m3u
+            output/scan_report.json
+          retention-days: 30
+
+      - name: 提交结果回仓库
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add output/
+          if git diff --staged --quiet; then
+            echo "结果无变化"
+          else
+            git commit -m "更新扫描结果 $(date -u +%Y-%m-%d_%H:%M)"
+            git push
+          fi
