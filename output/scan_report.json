@@ -1,24 +1,25 @@
 {
-  "scan_time": "2026-09-17T02:57:44.846123Z",
+  "scan_time": "2026-09-17T03:10:20.373437Z",
   "settings": {
-    "concurrency": 10,
-    "timeout": 5
+    "concurrency": 5,
+    "timeout": 10,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
   },
   "strict_mode": false,
   "targets": [
     {
-      "name": "站点A",
-      "template": "http://45.192.97.170:8880/play/{id}.m3u8",
+      "name": "单测",
+      "template": "http://45.192.97.170:8880/play/{id}/.m3u8",
       "total": 1,
       "valid": 0,
       "inferred": false,
       "failure_reasons": {
-        "分片HTTP404": 1
+        "m3u8失败:HTTP404": 1
       },
       "failure_samples": [
         {
-          "url": "http://45.192.97.170:8880/play/70.m3u8",
-          "reason": "分片HTTP404"
+          "url": "http://45.192.97.170:8880/play/70/.m3u8",
+          "reason": "m3u8失败:HTTP404"
         }
       ]
     }
@@ -29,7 +30,7 @@
   "by_source": {},
   "by_verify_level": {},
   "global_failure_reasons": {
-    "分片HTTP404": 1
+    "m3u8失败:HTTP404": 1
   },
   "channels": []
 }
