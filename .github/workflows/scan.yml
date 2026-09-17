@@ -1,17 +1,64 @@
 name: IPTV Channel Scanner
 
 on:
+  # 手动触发：Actions 页面填参数
   workflow_dispatch:
     inputs:
+      base_url:
+        description: 'm3u8 地址（必填，例：http://xxx/live/5/index.m3u8）'
+        required: true
+        type: string
+      template:
+        description: 'URL 模板（用 {id} 占位，留空则自动推断）'
+        required: false
+        type: string
+      start:
+        description: '起始数字'
+        required: false
+        default: '1'
+        type: string
+      end:
+        description: '结束数字'
+        required: false
+        default: '100'
+        type: string
+      referer:
+        description: 'Referer（防盗链需要时填，例：http://xxx/）'
+        required: false
+        type: string
+      id_segment:
+        description: '替换第几段数字（1=第一段，留空则自动）'
+        required: false
+        type: string
+      concurrency:
+        description: '并发数（建议 10-30）'
+        required: false
+        default: '20'
+        type: string
+      timeout:
+        description: '单次超时（秒）'
+        required: false
+        default: '10'
+        type: string
+      name:
+        description: '本次扫描名称（显示在播放列表分组）'
+        required: false
+        default: '手动扫描'
+        type: string
       strict:
-        description: '严格模式（只输出分片级验证通过的频道）'
+        description: '严格模式（只保留分片级验证通过的）'
+        required: false
         type: boolean
         default: false
+
+  # 推送触发（改 targets.yaml 时自动跑）
   push:
     paths:
       - 'targets.yaml'
       - 'channel_map.yaml'
       - 'scanner.py'
+
+  # 定时触发（每天 02:00 UTC）
   schedule:
     - cron: '0 2 * * *'
 
@@ -31,18 +78,34 @@ jobs:
       - name: 安装依赖
         run: pip install -r requirements.txt
 
-      - name: 运行扫描
+      # 手动触发：用表单参数
+      - name: 运行扫描（表单模式）
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          SCAN_BASE_URL: ${{ github.event.inputs.base_url }}
+          SCAN_TEMPLATE: ${{ github.event.inputs.template }}
+          SCAN_START: ${{ github.event.inputs.start }}
+          SCAN_END: ${{ github.event.inputs.end }}
+          SCAN_REFERER: ${{ github.event.inputs.referer }}
+          SCAN_ID_SEGMENT: ${{ github.event.inputs.id_segment }}
+          SCAN_CONCURRENCY: ${{ github.event.inputs.concurrency }}
+          SCAN_TIMEOUT: ${{ github.event.inputs.timeout }}
+          SCAN_NAME: ${{ github.event.inputs.name }}
+          SCAN_STRICT: ${{ github.event.inputs.strict }}
         run: |
-          STRICT_FLAG=""
-          if [ "${{ github.event.inputs.strict }}" = "true" ]; then
-            STRICT_FLAG="--strict"
-          fi
+          python scanner.py \
+            --output output/playlist.m3u \
+            --report output/scan_report.json
+
+      # 定时/推送触发：用 targets.yaml
+      - name: 运行扫描（批量模式）
+        if: github.event_name != 'workflow_dispatch'
+        run: |
           python scanner.py \
             --config targets.yaml \
             --channel-map channel_map.yaml \
             --output output/playlist.m3u \
-            --report output/scan_report.json \
-            $STRICT_FLAG
+            --report output/scan_report.json
 
       - name: 上传结果
         uses: actions/upload-artifact@v4
