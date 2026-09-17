@@ -11,4 +11,4 @@ targets:
     start: 70
     end: 70
     # 关键：加 Referer，填该网站的首页或播放页
-    referer: "http://45.192.97.170:8880/play/"
+    referer: "http://45.192.97.170:8880/"
