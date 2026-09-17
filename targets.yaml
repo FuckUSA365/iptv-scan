@@ -6,9 +6,9 @@ settings:
 
 targets:
   - name: "单测"
-    base_url: "http://45.192.97.170:8880/play/70.m3u8"
-    template: "http://45.192.97.170:8880/play/{id}/.m3u8"
-    start: 70
-    end: 70
+    base_url: "http://183.129.255.66:8480/hls/1/index.m3u8"
+    template: "http://183.129.255.66:8480/hls/{id}/index.m3u8"
+    start: 1
+    end: 100
     # 关键：加 Referer，填该网站的首页或播放页
-    referer: "http://45.192.97.170/"
+    referer: "http://183.129.255.66:8480/hls/"
