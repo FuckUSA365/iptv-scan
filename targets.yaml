@@ -1,0 +1,37 @@
+# ============================================
+#  修改这个文件，push 后工作流自动运行
+# ============================================
+
+settings:
+  concurrency: 20          # 并发数，建议 10-30
+  timeout: 10              # 单次请求超时（秒）
+  # user_agent: "自定义UA（可选）"
+
+targets:
+  # 推荐：显式写模板，最可靠
+  - name: "站点A"
+    base_url: "http://example.com/live/5/index.m3u8"
+    template: "http://example.com/live/{id}/index.m3u8"
+    start: 1
+    end: 300
+
+  # 简洁：指出替换第几段数字（排除IP/端口）
+  # - name: "站点B"
+  #   base_url: "http://another.com/2024/iptv/88.m3u8"
+  #   id_segment: 2
+  #   start: 1
+  #   end: 200
+
+  # 高级：正则定位 + 需要 Referer
+  # - name: "站点C"
+  #   base_url: "http://third.com/hls/channel/1001/index.m3u8"
+  #   id_regex: "/channel/(\\d+)/"
+  #   start: 1000
+  #   end: 1200
+  #   referer: "http://third.com/"
+
+  # 自动推断（日志会打印推断结果供核对）
+  # - name: "站点D"
+  #   base_url: "http://fourth.com/live/66/index.m3u8"
+  #   start: 1
+  #   end: 100
