@@ -40,16 +40,19 @@ http://183.129.255.66:8480/hls/12/index.m3u8
 http://183.129.255.66:8480/hls/13/index.m3u8
 #EXTINF:-1 group-title="单测",hls
 #EXTVLCOPT:http-referrer=http://183.129.255.66:8480/hls/
-http://183.129.255.66:8480/hls/14/index.m3u8
+http://183.129.255.66:8480/hls/15/index.m3u8
 #EXTINF:-1 group-title="单测",hls
 #EXTVLCOPT:http-referrer=http://183.129.255.66:8480/hls/
-http://183.129.255.66:8480/hls/15/index.m3u8
+http://183.129.255.66:8480/hls/16/index.m3u8
 #EXTINF:-1 group-title="单测",hls
 #EXTVLCOPT:http-referrer=http://183.129.255.66:8480/hls/
 http://183.129.255.66:8480/hls/17/index.m3u8
 #EXTINF:-1 group-title="单测",hls
 #EXTVLCOPT:http-referrer=http://183.129.255.66:8480/hls/
 http://183.129.255.66:8480/hls/18/index.m3u8
+#EXTINF:-1 group-title="单测",hls
+#EXTVLCOPT:http-referrer=http://183.129.255.66:8480/hls/
+http://183.129.255.66:8480/hls/19/index.m3u8
 #EXTINF:-1 group-title="单测",hls
 #EXTVLCOPT:http-referrer=http://183.129.255.66:8480/hls/
 http://183.129.255.66:8480/hls/20/index.m3u8
@@ -73,9 +76,6 @@ http://183.129.255.66:8480/hls/25/index.m3u8
 http://183.129.255.66:8480/hls/26/index.m3u8
 #EXTINF:-1 group-title="单测",hls
 #EXTVLCOPT:http-referrer=http://183.129.255.66:8480/hls/
-http://183.129.255.66:8480/hls/27/index.m3u8
-#EXTINF:-1 group-title="单测",hls
-#EXTVLCOPT:http-referrer=http://183.129.255.66:8480/hls/
 http://183.129.255.66:8480/hls/28/index.m3u8
 #EXTINF:-1 group-title="单测",hls
 #EXTVLCOPT:http-referrer=http://183.129.255.66:8480/hls/
@@ -95,6 +95,9 @@ http://183.129.255.66:8480/hls/33/index.m3u8
 #EXTINF:-1 group-title="单测",hls
 #EXTVLCOPT:http-referrer=http://183.129.255.66:8480/hls/
 http://183.129.255.66:8480/hls/34/index.m3u8
+#EXTINF:-1 group-title="单测",hls
+#EXTVLCOPT:http-referrer=http://183.129.255.66:8480/hls/
+http://183.129.255.66:8480/hls/35/index.m3u8
 #EXTINF:-1 group-title="单测",hls
 #EXTVLCOPT:http-referrer=http://183.129.255.66:8480/hls/
 http://183.129.255.66:8480/hls/36/index.m3u8
