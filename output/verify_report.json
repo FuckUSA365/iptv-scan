@@ -1,19 +1,28 @@
 {
-  "verify_time": "2026-10-07T10:53:29.408307Z",
+  "verify_time": "2026-10-08T11:10:56.884091Z",
   "input": "output/playlist.m3u",
   "input_kind": "local",
   "strict_mode": false,
   "concurrency": 15,
-  "elapsed_seconds": 43.49,
-  "total": 46,
+  "elapsed_seconds": 43.46,
+  "total": 49,
   "playable": 0,
-  "failed": 46,
+  "failed": 49,
   "output": 0,
   "by_verify_level": {},
   "failure_reasons": {
-    "m3u8失败:超时": 46
+    "m3u8失败:超时": 49
   },
   "channels": [
+    {
+      "name": "hls",
+      "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/1/index.m3u8",
+      "playable": false,
+      "verify_level": null,
+      "reason": "m3u8失败:超时",
+      "segment_time": 0.0
+    },
     {
       "name": "hls",
       "group": "单测",
@@ -135,6 +144,15 @@
       "name": "hls",
       "group": "单测",
       "url": "http://183.129.255.66:8480/hls/15/index.m3u8",
+      "playable": false,
+      "verify_level": null,
+      "reason": "m3u8失败:超时",
+      "segment_time": 0.0
+    },
+    {
+      "name": "hls",
+      "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/16/index.m3u8",
       "playable": false,
       "verify_level": null,
       "reason": "m3u8失败:超时",
@@ -287,6 +305,15 @@
     {
       "name": "hls",
       "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/33/index.m3u8",
+      "playable": false,
+      "verify_level": null,
+      "reason": "m3u8失败:超时",
+      "segment_time": 0.0
+    },
+    {
+      "name": "hls",
+      "group": "单测",
       "url": "http://183.129.255.66:8480/hls/34/index.m3u8",
       "playable": false,
       "verify_level": null,
@@ -341,7 +368,7 @@
     {
       "name": "hls",
       "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/41/index.m3u8",
+      "url": "http://183.129.255.66:8480/hls/40/index.m3u8",
       "playable": false,
       "verify_level": null,
       "reason": "m3u8失败:超时",
@@ -350,7 +377,7 @@
     {
       "name": "hls",
       "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/42/index.m3u8",
+      "url": "http://183.129.255.66:8480/hls/41/index.m3u8",
       "playable": false,
       "verify_level": null,
       "reason": "m3u8失败:超时",
