@@ -1,5 +1,5 @@
 {
-  "scan_time": "2026-10-19T07:03:49.101738Z",
+  "scan_time": "2026-10-20T06:48:32.207143Z",
   "mode": "config",
   "settings": {
     "concurrency": 5,
@@ -12,19 +12,27 @@
       "name": "单测",
       "template": "http://183.129.255.66:8480/hls/{id}/index.m3u8",
       "total": 100,
-      "valid": 48,
+      "valid": 46,
       "inferred": false,
       "failure_reasons": {
-        "分片HTTP404": 2,
+        "分片HTTP404": 4,
         "m3u8失败:HTTP404": 50
       },
       "failure_samples": [
         {
-          "url": "http://183.129.255.66:8480/hls/20/index.m3u8",
+          "url": "http://183.129.255.66:8480/hls/1/index.m3u8",
+          "reason": "分片HTTP404"
+        },
+        {
+          "url": "http://183.129.255.66:8480/hls/10/index.m3u8",
           "reason": "分片HTTP404"
         },
         {
           "url": "http://183.129.255.66:8480/hls/23/index.m3u8",
+          "reason": "分片HTTP404"
+        },
+        {
+          "url": "http://183.129.255.66:8480/hls/49/index.m3u8",
           "reason": "分片HTTP404"
         },
         {
@@ -50,50 +58,31 @@
         {
           "url": "http://183.129.255.66:8480/hls/56/index.m3u8",
           "reason": "m3u8失败:HTTP404"
-        },
-        {
-          "url": "http://183.129.255.66:8480/hls/57/index.m3u8",
-          "reason": "m3u8失败:HTTP404"
-        },
-        {
-          "url": "http://183.129.255.66:8480/hls/58/index.m3u8",
-          "reason": "m3u8失败:HTTP404"
         }
       ]
     }
   ],
   "total_scanned": 100,
-  "total_valid": 48,
-  "total_output": 48,
+  "total_valid": 46,
+  "total_output": 46,
   "by_source": {
-    "path": 48
+    "path": 46
   },
   "by_verify_level": {
-    "segment": 48
+    "segment": 46
   },
   "global_failure_reasons": {
-    "分片HTTP404": 2,
+    "分片HTTP404": 4,
     "m3u8失败:HTTP404": 50
   },
   "channels": [
-    {
-      "url": "http://183.129.255.66:8480/hls/1/index.m3u8",
-      "name": "hls",
-      "name_source": "path",
-      "verify_level": "segment",
-      "segment_size": 4038,
-      "segment_time": 0.297,
-      "referer": "http://183.129.255.66:8480/hls/",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "source": "单测"
-    },
     {
       "url": "http://183.129.255.66:8480/hls/2/index.m3u8",
       "name": "hls",
       "name_source": "path",
       "verify_level": "segment",
-      "segment_size": 2610,
-      "segment_time": 0.246,
+      "segment_size": 4096,
+      "segment_time": 0.276,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -104,299 +93,13 @@
       "name_source": "path",
       "verify_level": "segment",
       "segment_size": 4096,
-      "segment_time": 0.278,
-      "referer": "http://183.129.255.66:8480/hls/",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "source": "单测"
-    },
-    {
-      "url": "http://183.129.255.66:8480/hls/4/index.m3u8",
-      "name": "hls",
-      "name_source": "path",
-      "verify_level": "segment",
-      "segment_size": 1182,
-      "segment_time": 0.28,
-      "referer": "http://183.129.255.66:8480/hls/",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "source": "单测"
-    },
-    {
-      "url": "http://183.129.255.66:8480/hls/5/index.m3u8",
-      "name": "hls",
-      "name_source": "path",
-      "verify_level": "segment",
-      "segment_size": 2610,
-      "segment_time": 0.256,
-      "referer": "http://183.129.255.66:8480/hls/",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "source": "单测"
-    },
-    {
-      "url": "http://183.129.255.66:8480/hls/6/index.m3u8",
-      "name": "hls",
-      "name_source": "path",
-      "verify_level": "segment",
-      "segment_size": 4096,
-      "segment_time": 0.264,
-      "referer": "http://183.129.255.66:8480/hls/",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "source": "单测"
-    },
-    {
-      "url": "http://183.129.255.66:8480/hls/7/index.m3u8",
-      "name": "hls",
-      "name_source": "path",
-      "verify_level": "segment",
-      "segment_size": 4038,
-      "segment_time": 0.32,
-      "referer": "http://183.129.255.66:8480/hls/",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "source": "单测"
-    },
-    {
-      "url": "http://183.129.255.66:8480/hls/8/index.m3u8",
-      "name": "hls",
-      "name_source": "path",
-      "verify_level": "segment",
-      "segment_size": 2610,
-      "segment_time": 0.262,
-      "referer": "http://183.129.255.66:8480/hls/",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "source": "单测"
-    },
-    {
-      "url": "http://183.129.255.66:8480/hls/9/index.m3u8",
-      "name": "hls",
-      "name_source": "path",
-      "verify_level": "segment",
-      "segment_size": 4038,
-      "segment_time": 0.296,
-      "referer": "http://183.129.255.66:8480/hls/",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "source": "单测"
-    },
-    {
-      "url": "http://183.129.255.66:8480/hls/10/index.m3u8",
-      "name": "hls",
-      "name_source": "path",
-      "verify_level": "segment",
-      "segment_size": 1182,
-      "segment_time": 0.274,
-      "referer": "http://183.129.255.66:8480/hls/",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "source": "单测"
-    },
-    {
-      "url": "http://183.129.255.66:8480/hls/11/index.m3u8",
-      "name": "hls",
-      "name_source": "path",
-      "verify_level": "segment",
-      "segment_size": 2610,
-      "segment_time": 0.263,
-      "referer": "http://183.129.255.66:8480/hls/",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "source": "单测"
-    },
-    {
-      "url": "http://183.129.255.66:8480/hls/12/index.m3u8",
-      "name": "hls",
-      "name_source": "path",
-      "verify_level": "segment",
-      "segment_size": 1182,
-      "segment_time": 0.266,
-      "referer": "http://183.129.255.66:8480/hls/",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "source": "单测"
-    },
-    {
-      "url": "http://183.129.255.66:8480/hls/13/index.m3u8",
-      "name": "hls",
-      "name_source": "path",
-      "verify_level": "segment",
-      "segment_size": 4038,
-      "segment_time": 0.258,
-      "referer": "http://183.129.255.66:8480/hls/",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "source": "单测"
-    },
-    {
-      "url": "http://183.129.255.66:8480/hls/14/index.m3u8",
-      "name": "hls",
-      "name_source": "path",
-      "verify_level": "segment",
-      "segment_size": 4096,
-      "segment_time": 0.264,
-      "referer": "http://183.129.255.66:8480/hls/",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "source": "单测"
-    },
-    {
-      "url": "http://183.129.255.66:8480/hls/15/index.m3u8",
-      "name": "hls",
-      "name_source": "path",
-      "verify_level": "segment",
-      "segment_size": 1182,
-      "segment_time": 0.291,
-      "referer": "http://183.129.255.66:8480/hls/",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "source": "单测"
-    },
-    {
-      "url": "http://183.129.255.66:8480/hls/16/index.m3u8",
-      "name": "hls",
-      "name_source": "path",
-      "verify_level": "segment",
-      "segment_size": 2610,
-      "segment_time": 0.271,
-      "referer": "http://183.129.255.66:8480/hls/",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "source": "单测"
-    },
-    {
-      "url": "http://183.129.255.66:8480/hls/17/index.m3u8",
-      "name": "hls",
-      "name_source": "path",
-      "verify_level": "segment",
-      "segment_size": 2610,
-      "segment_time": 0.266,
-      "referer": "http://183.129.255.66:8480/hls/",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "source": "单测"
-    },
-    {
-      "url": "http://183.129.255.66:8480/hls/18/index.m3u8",
-      "name": "hls",
-      "name_source": "path",
-      "verify_level": "segment",
-      "segment_size": 4038,
-      "segment_time": 0.239,
-      "referer": "http://183.129.255.66:8480/hls/",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "source": "单测"
-    },
-    {
-      "url": "http://183.129.255.66:8480/hls/19/index.m3u8",
-      "name": "hls",
-      "name_source": "path",
-      "verify_level": "segment",
-      "segment_size": 4096,
-      "segment_time": 1.062,
-      "referer": "http://183.129.255.66:8480/hls/",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "source": "单测"
-    },
-    {
-      "url": "http://183.129.255.66:8480/hls/21/index.m3u8",
-      "name": "hls",
-      "name_source": "path",
-      "verify_level": "segment",
-      "segment_size": 4096,
-      "segment_time": 0.272,
-      "referer": "http://183.129.255.66:8480/hls/",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "source": "单测"
-    },
-    {
-      "url": "http://183.129.255.66:8480/hls/22/index.m3u8",
-      "name": "hls",
-      "name_source": "path",
-      "verify_level": "segment",
-      "segment_size": 4096,
-      "segment_time": 0.256,
-      "referer": "http://183.129.255.66:8480/hls/",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "source": "单测"
-    },
-    {
-      "url": "http://183.129.255.66:8480/hls/24/index.m3u8",
-      "name": "hls",
-      "name_source": "path",
-      "verify_level": "segment",
-      "segment_size": 1182,
-      "segment_time": 0.267,
-      "referer": "http://183.129.255.66:8480/hls/",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "source": "单测"
-    },
-    {
-      "url": "http://183.129.255.66:8480/hls/25/index.m3u8",
-      "name": "hls",
-      "name_source": "path",
-      "verify_level": "segment",
-      "segment_size": 4096,
-      "segment_time": 0.255,
-      "referer": "http://183.129.255.66:8480/hls/",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "source": "单测"
-    },
-    {
-      "url": "http://183.129.255.66:8480/hls/26/index.m3u8",
-      "name": "hls",
-      "name_source": "path",
-      "verify_level": "segment",
-      "segment_size": 4038,
-      "segment_time": 0.264,
-      "referer": "http://183.129.255.66:8480/hls/",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "source": "单测"
-    },
-    {
-      "url": "http://183.129.255.66:8480/hls/27/index.m3u8",
-      "name": "hls",
-      "name_source": "path",
-      "verify_level": "segment",
-      "segment_size": 1182,
       "segment_time": 0.252,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
     },
     {
-      "url": "http://183.129.255.66:8480/hls/28/index.m3u8",
-      "name": "hls",
-      "name_source": "path",
-      "verify_level": "segment",
-      "segment_size": 2610,
-      "segment_time": 0.28,
-      "referer": "http://183.129.255.66:8480/hls/",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "source": "单测"
-    },
-    {
-      "url": "http://183.129.255.66:8480/hls/29/index.m3u8",
-      "name": "hls",
-      "name_source": "path",
-      "verify_level": "segment",
-      "segment_size": 4096,
-      "segment_time": 0.277,
-      "referer": "http://183.129.255.66:8480/hls/",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "source": "单测"
-    },
-    {
-      "url": "http://183.129.255.66:8480/hls/30/index.m3u8",
-      "name": "hls",
-      "name_source": "path",
-      "verify_level": "segment",
-      "segment_size": 2610,
-      "segment_time": 0.267,
-      "referer": "http://183.129.255.66:8480/hls/",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "source": "单测"
-    },
-    {
-      "url": "http://183.129.255.66:8480/hls/31/index.m3u8",
-      "name": "hls",
-      "name_source": "path",
-      "verify_level": "segment",
-      "segment_size": 2610,
-      "segment_time": 0.245,
-      "referer": "http://183.129.255.66:8480/hls/",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "source": "单测"
-    },
-    {
-      "url": "http://183.129.255.66:8480/hls/32/index.m3u8",
+      "url": "http://183.129.255.66:8480/hls/4/index.m3u8",
       "name": "hls",
       "name_source": "path",
       "verify_level": "segment",
@@ -407,62 +110,150 @@
       "source": "单测"
     },
     {
-      "url": "http://183.129.255.66:8480/hls/33/index.m3u8",
+      "url": "http://183.129.255.66:8480/hls/5/index.m3u8",
       "name": "hls",
       "name_source": "path",
       "verify_level": "segment",
       "segment_size": 4096,
+      "segment_time": 0.249,
+      "referer": "http://183.129.255.66:8480/hls/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "source": "单测"
+    },
+    {
+      "url": "http://183.129.255.66:8480/hls/6/index.m3u8",
+      "name": "hls",
+      "name_source": "path",
+      "verify_level": "segment",
+      "segment_size": 4096,
+      "segment_time": 0.247,
+      "referer": "http://183.129.255.66:8480/hls/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "source": "单测"
+    },
+    {
+      "url": "http://183.129.255.66:8480/hls/7/index.m3u8",
+      "name": "hls",
+      "name_source": "path",
+      "verify_level": "segment",
+      "segment_size": 4096,
+      "segment_time": 0.268,
+      "referer": "http://183.129.255.66:8480/hls/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "source": "单测"
+    },
+    {
+      "url": "http://183.129.255.66:8480/hls/8/index.m3u8",
+      "name": "hls",
+      "name_source": "path",
+      "verify_level": "segment",
+      "segment_size": 1182,
+      "segment_time": 0.257,
+      "referer": "http://183.129.255.66:8480/hls/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "source": "单测"
+    },
+    {
+      "url": "http://183.129.255.66:8480/hls/9/index.m3u8",
+      "name": "hls",
+      "name_source": "path",
+      "verify_level": "segment",
+      "segment_size": 4038,
+      "segment_time": 0.253,
+      "referer": "http://183.129.255.66:8480/hls/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "source": "单测"
+    },
+    {
+      "url": "http://183.129.255.66:8480/hls/11/index.m3u8",
+      "name": "hls",
+      "name_source": "path",
+      "verify_level": "segment",
+      "segment_size": 1182,
+      "segment_time": 0.263,
+      "referer": "http://183.129.255.66:8480/hls/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "source": "单测"
+    },
+    {
+      "url": "http://183.129.255.66:8480/hls/12/index.m3u8",
+      "name": "hls",
+      "name_source": "path",
+      "verify_level": "segment",
+      "segment_size": 4096,
+      "segment_time": 0.268,
+      "referer": "http://183.129.255.66:8480/hls/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "source": "单测"
+    },
+    {
+      "url": "http://183.129.255.66:8480/hls/13/index.m3u8",
+      "name": "hls",
+      "name_source": "path",
+      "verify_level": "segment",
+      "segment_size": 2610,
       "segment_time": 0.282,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
     },
     {
-      "url": "http://183.129.255.66:8480/hls/34/index.m3u8",
+      "url": "http://183.129.255.66:8480/hls/14/index.m3u8",
+      "name": "hls",
+      "name_source": "path",
+      "verify_level": "segment",
+      "segment_size": 1182,
+      "segment_time": 0.255,
+      "referer": "http://183.129.255.66:8480/hls/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "source": "单测"
+    },
+    {
+      "url": "http://183.129.255.66:8480/hls/15/index.m3u8",
       "name": "hls",
       "name_source": "path",
       "verify_level": "segment",
       "segment_size": 4096,
-      "segment_time": 0.949,
+      "segment_time": 0.255,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
     },
     {
-      "url": "http://183.129.255.66:8480/hls/35/index.m3u8",
+      "url": "http://183.129.255.66:8480/hls/16/index.m3u8",
       "name": "hls",
       "name_source": "path",
       "verify_level": "segment",
-      "segment_size": 1182,
-      "segment_time": 0.273,
+      "segment_size": 4096,
+      "segment_time": 0.998,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
     },
     {
-      "url": "http://183.129.255.66:8480/hls/36/index.m3u8",
+      "url": "http://183.129.255.66:8480/hls/17/index.m3u8",
       "name": "hls",
       "name_source": "path",
       "verify_level": "segment",
-      "segment_size": 1182,
-      "segment_time": 0.261,
+      "segment_size": 4096,
+      "segment_time": 0.248,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
     },
     {
-      "url": "http://183.129.255.66:8480/hls/37/index.m3u8",
+      "url": "http://183.129.255.66:8480/hls/18/index.m3u8",
       "name": "hls",
       "name_source": "path",
       "verify_level": "segment",
-      "segment_size": 1182,
-      "segment_time": 0.267,
+      "segment_size": 4038,
+      "segment_time": 0.243,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
     },
     {
-      "url": "http://183.129.255.66:8480/hls/38/index.m3u8",
+      "url": "http://183.129.255.66:8480/hls/19/index.m3u8",
       "name": "hls",
       "name_source": "path",
       "verify_level": "segment",
@@ -473,18 +264,7 @@
       "source": "单测"
     },
     {
-      "url": "http://183.129.255.66:8480/hls/39/index.m3u8",
-      "name": "hls",
-      "name_source": "path",
-      "verify_level": "segment",
-      "segment_size": 1182,
-      "segment_time": 0.254,
-      "referer": "http://183.129.255.66:8480/hls/",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "source": "单测"
-    },
-    {
-      "url": "http://183.129.255.66:8480/hls/40/index.m3u8",
+      "url": "http://183.129.255.66:8480/hls/20/index.m3u8",
       "name": "hls",
       "name_source": "path",
       "verify_level": "segment",
@@ -495,12 +275,221 @@
       "source": "单测"
     },
     {
-      "url": "http://183.129.255.66:8480/hls/41/index.m3u8",
+      "url": "http://183.129.255.66:8480/hls/21/index.m3u8",
+      "name": "hls",
+      "name_source": "path",
+      "verify_level": "segment",
+      "segment_size": 4096,
+      "segment_time": 0.271,
+      "referer": "http://183.129.255.66:8480/hls/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "source": "单测"
+    },
+    {
+      "url": "http://183.129.255.66:8480/hls/22/index.m3u8",
+      "name": "hls",
+      "name_source": "path",
+      "verify_level": "segment",
+      "segment_size": 4096,
+      "segment_time": 0.266,
+      "referer": "http://183.129.255.66:8480/hls/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "source": "单测"
+    },
+    {
+      "url": "http://183.129.255.66:8480/hls/24/index.m3u8",
+      "name": "hls",
+      "name_source": "path",
+      "verify_level": "segment",
+      "segment_size": 4096,
+      "segment_time": 0.28,
+      "referer": "http://183.129.255.66:8480/hls/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "source": "单测"
+    },
+    {
+      "url": "http://183.129.255.66:8480/hls/25/index.m3u8",
+      "name": "hls",
+      "name_source": "path",
+      "verify_level": "segment",
+      "segment_size": 4096,
+      "segment_time": 0.266,
+      "referer": "http://183.129.255.66:8480/hls/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "source": "单测"
+    },
+    {
+      "url": "http://183.129.255.66:8480/hls/26/index.m3u8",
       "name": "hls",
       "name_source": "path",
       "verify_level": "segment",
       "segment_size": 4038,
-      "segment_time": 0.256,
+      "segment_time": 1.018,
+      "referer": "http://183.129.255.66:8480/hls/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "source": "单测"
+    },
+    {
+      "url": "http://183.129.255.66:8480/hls/27/index.m3u8",
+      "name": "hls",
+      "name_source": "path",
+      "verify_level": "segment",
+      "segment_size": 2610,
+      "segment_time": 0.274,
+      "referer": "http://183.129.255.66:8480/hls/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "source": "单测"
+    },
+    {
+      "url": "http://183.129.255.66:8480/hls/28/index.m3u8",
+      "name": "hls",
+      "name_source": "path",
+      "verify_level": "segment",
+      "segment_size": 1182,
+      "segment_time": 0.248,
+      "referer": "http://183.129.255.66:8480/hls/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "source": "单测"
+    },
+    {
+      "url": "http://183.129.255.66:8480/hls/29/index.m3u8",
+      "name": "hls",
+      "name_source": "path",
+      "verify_level": "segment",
+      "segment_size": 2610,
+      "segment_time": 0.269,
+      "referer": "http://183.129.255.66:8480/hls/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "source": "单测"
+    },
+    {
+      "url": "http://183.129.255.66:8480/hls/30/index.m3u8",
+      "name": "hls",
+      "name_source": "path",
+      "verify_level": "segment",
+      "segment_size": 4096,
+      "segment_time": 0.264,
+      "referer": "http://183.129.255.66:8480/hls/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "source": "单测"
+    },
+    {
+      "url": "http://183.129.255.66:8480/hls/31/index.m3u8",
+      "name": "hls",
+      "name_source": "path",
+      "verify_level": "segment",
+      "segment_size": 2610,
+      "segment_time": 0.28,
+      "referer": "http://183.129.255.66:8480/hls/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "source": "单测"
+    },
+    {
+      "url": "http://183.129.255.66:8480/hls/32/index.m3u8",
+      "name": "hls",
+      "name_source": "path",
+      "verify_level": "segment",
+      "segment_size": 4096,
+      "segment_time": 0.243,
+      "referer": "http://183.129.255.66:8480/hls/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "source": "单测"
+    },
+    {
+      "url": "http://183.129.255.66:8480/hls/33/index.m3u8",
+      "name": "hls",
+      "name_source": "path",
+      "verify_level": "segment",
+      "segment_size": 1182,
+      "segment_time": 0.275,
+      "referer": "http://183.129.255.66:8480/hls/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "source": "单测"
+    },
+    {
+      "url": "http://183.129.255.66:8480/hls/34/index.m3u8",
+      "name": "hls",
+      "name_source": "path",
+      "verify_level": "segment",
+      "segment_size": 4038,
+      "segment_time": 0.265,
+      "referer": "http://183.129.255.66:8480/hls/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "source": "单测"
+    },
+    {
+      "url": "http://183.129.255.66:8480/hls/35/index.m3u8",
+      "name": "hls",
+      "name_source": "path",
+      "verify_level": "segment",
+      "segment_size": 4038,
+      "segment_time": 1.023,
+      "referer": "http://183.129.255.66:8480/hls/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "source": "单测"
+    },
+    {
+      "url": "http://183.129.255.66:8480/hls/36/index.m3u8",
+      "name": "hls",
+      "name_source": "path",
+      "verify_level": "segment",
+      "segment_size": 4096,
+      "segment_time": 0.276,
+      "referer": "http://183.129.255.66:8480/hls/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "source": "单测"
+    },
+    {
+      "url": "http://183.129.255.66:8480/hls/37/index.m3u8",
+      "name": "hls",
+      "name_source": "path",
+      "verify_level": "segment",
+      "segment_size": 4096,
+      "segment_time": 0.273,
+      "referer": "http://183.129.255.66:8480/hls/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "source": "单测"
+    },
+    {
+      "url": "http://183.129.255.66:8480/hls/38/index.m3u8",
+      "name": "hls",
+      "name_source": "path",
+      "verify_level": "segment",
+      "segment_size": 2610,
+      "segment_time": 0.27,
+      "referer": "http://183.129.255.66:8480/hls/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "source": "单测"
+    },
+    {
+      "url": "http://183.129.255.66:8480/hls/39/index.m3u8",
+      "name": "hls",
+      "name_source": "path",
+      "verify_level": "segment",
+      "segment_size": 4096,
+      "segment_time": 0.258,
+      "referer": "http://183.129.255.66:8480/hls/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "source": "单测"
+    },
+    {
+      "url": "http://183.129.255.66:8480/hls/40/index.m3u8",
+      "name": "hls",
+      "name_source": "path",
+      "verify_level": "segment",
+      "segment_size": 4096,
+      "segment_time": 0.25,
+      "referer": "http://183.129.255.66:8480/hls/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "source": "单测"
+    },
+    {
+      "url": "http://183.129.255.66:8480/hls/41/index.m3u8",
+      "name": "hls",
+      "name_source": "path",
+      "verify_level": "segment",
+      "segment_size": 4096,
+      "segment_time": 0.258,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -510,8 +499,8 @@
       "name": "hls",
       "name_source": "path",
       "verify_level": "segment",
-      "segment_size": 4096,
-      "segment_time": 0.278,
+      "segment_size": 1182,
+      "segment_time": 0.266,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -521,8 +510,8 @@
       "name": "hls",
       "name_source": "path",
       "verify_level": "segment",
-      "segment_size": 4038,
-      "segment_time": 0.241,
+      "segment_size": 1182,
+      "segment_time": 0.261,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -533,7 +522,7 @@
       "name_source": "path",
       "verify_level": "segment",
       "segment_size": 2610,
-      "segment_time": 0.26,
+      "segment_time": 0.283,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -543,8 +532,8 @@
       "name": "hls",
       "name_source": "path",
       "verify_level": "segment",
-      "segment_size": 4096,
-      "segment_time": 0.245,
+      "segment_size": 2610,
+      "segment_time": 0.269,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -555,7 +544,7 @@
       "name_source": "path",
       "verify_level": "segment",
       "segment_size": 2610,
-      "segment_time": 0.245,
+      "segment_time": 0.248,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -565,8 +554,8 @@
       "name": "hls",
       "name_source": "path",
       "verify_level": "segment",
-      "segment_size": 1182,
-      "segment_time": 0.987,
+      "segment_size": 4038,
+      "segment_time": 1.075,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -577,18 +566,7 @@
       "name_source": "path",
       "verify_level": "segment",
       "segment_size": 2610,
-      "segment_time": 0.284,
-      "referer": "http://183.129.255.66:8480/hls/",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "source": "单测"
-    },
-    {
-      "url": "http://183.129.255.66:8480/hls/49/index.m3u8",
-      "name": "hls",
-      "name_source": "path",
-      "verify_level": "segment",
-      "segment_size": 4038,
-      "segment_time": 0.271,
+      "segment_time": 0.279,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -599,7 +577,7 @@
       "name_source": "path",
       "verify_level": "segment",
       "segment_size": 4038,
-      "segment_time": 0.273,
+      "segment_time": 0.245,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
