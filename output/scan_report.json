@@ -1,5 +1,5 @@
 {
-  "scan_time": "2026-11-01T08:18:52.467332Z",
+  "scan_time": "2026-11-02T08:32:59.738150Z",
   "mode": "config",
   "settings": {
     "concurrency": 5,
@@ -12,27 +12,19 @@
       "name": "单测",
       "template": "http://183.129.255.66:8480/hls/{id}/index.m3u8",
       "total": 100,
-      "valid": 46,
+      "valid": 48,
       "inferred": false,
       "failure_reasons": {
-        "分片HTTP404": 4,
+        "分片HTTP404": 2,
         "m3u8失败:HTTP404": 50
       },
       "failure_samples": [
         {
-          "url": "http://183.129.255.66:8480/hls/23/index.m3u8",
+          "url": "http://183.129.255.66:8480/hls/27/index.m3u8",
           "reason": "分片HTTP404"
         },
         {
-          "url": "http://183.129.255.66:8480/hls/24/index.m3u8",
-          "reason": "分片HTTP404"
-        },
-        {
-          "url": "http://183.129.255.66:8480/hls/43/index.m3u8",
-          "reason": "分片HTTP404"
-        },
-        {
-          "url": "http://183.129.255.66:8480/hls/48/index.m3u8",
+          "url": "http://183.129.255.66:8480/hls/32/index.m3u8",
           "reason": "分片HTTP404"
         },
         {
@@ -58,21 +50,29 @@
         {
           "url": "http://183.129.255.66:8480/hls/56/index.m3u8",
           "reason": "m3u8失败:HTTP404"
+        },
+        {
+          "url": "http://183.129.255.66:8480/hls/57/index.m3u8",
+          "reason": "m3u8失败:HTTP404"
+        },
+        {
+          "url": "http://183.129.255.66:8480/hls/58/index.m3u8",
+          "reason": "m3u8失败:HTTP404"
         }
       ]
     }
   ],
   "total_scanned": 100,
-  "total_valid": 46,
-  "total_output": 46,
+  "total_valid": 48,
+  "total_output": 48,
   "by_source": {
-    "path": 46
+    "path": 48
   },
   "by_verify_level": {
-    "segment": 46
+    "segment": 48
   },
   "global_failure_reasons": {
-    "分片HTTP404": 4,
+    "分片HTTP404": 2,
     "m3u8失败:HTTP404": 50
   },
   "channels": [
@@ -82,7 +82,7 @@
       "name_source": "path",
       "verify_level": "segment",
       "segment_size": 2610,
-      "segment_time": 0.261,
+      "segment_time": 0.885,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -93,7 +93,7 @@
       "name_source": "path",
       "verify_level": "segment",
       "segment_size": 4096,
-      "segment_time": 0.498,
+      "segment_time": 0.192,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -104,7 +104,7 @@
       "name_source": "path",
       "verify_level": "segment",
       "segment_size": 4096,
-      "segment_time": 0.274,
+      "segment_time": 0.874,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -114,8 +114,8 @@
       "name": "hls",
       "name_source": "path",
       "verify_level": "segment",
-      "segment_size": 4096,
-      "segment_time": 0.969,
+      "segment_size": 4038,
+      "segment_time": 0.214,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -126,7 +126,7 @@
       "name_source": "path",
       "verify_level": "segment",
       "segment_size": 4096,
-      "segment_time": 0.265,
+      "segment_time": 0.219,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -137,7 +137,7 @@
       "name_source": "path",
       "verify_level": "segment",
       "segment_size": 4038,
-      "segment_time": 0.264,
+      "segment_time": 0.22,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -147,8 +147,8 @@
       "name": "hls",
       "name_source": "path",
       "verify_level": "segment",
-      "segment_size": 1182,
-      "segment_time": 0.265,
+      "segment_size": 4096,
+      "segment_time": 0.226,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -158,8 +158,8 @@
       "name": "hls",
       "name_source": "path",
       "verify_level": "segment",
-      "segment_size": 4096,
-      "segment_time": 0.262,
+      "segment_size": 4038,
+      "segment_time": 0.273,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -170,7 +170,7 @@
       "name_source": "path",
       "verify_level": "segment",
       "segment_size": 4096,
-      "segment_time": 0.242,
+      "segment_time": 0.256,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -180,8 +180,8 @@
       "name": "hls",
       "name_source": "path",
       "verify_level": "segment",
-      "segment_size": 4038,
-      "segment_time": 0.263,
+      "segment_size": 4096,
+      "segment_time": 0.256,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -191,8 +191,8 @@
       "name": "hls",
       "name_source": "path",
       "verify_level": "segment",
-      "segment_size": 4096,
-      "segment_time": 0.247,
+      "segment_size": 4038,
+      "segment_time": 0.224,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -202,8 +202,8 @@
       "name": "hls",
       "name_source": "path",
       "verify_level": "segment",
-      "segment_size": 4096,
-      "segment_time": 0.273,
+      "segment_size": 1182,
+      "segment_time": 0.2,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -213,8 +213,8 @@
       "name": "hls",
       "name_source": "path",
       "verify_level": "segment",
-      "segment_size": 4038,
-      "segment_time": 0.261,
+      "segment_size": 4096,
+      "segment_time": 0.198,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -225,7 +225,7 @@
       "name_source": "path",
       "verify_level": "segment",
       "segment_size": 4096,
-      "segment_time": 0.253,
+      "segment_time": 0.195,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -235,8 +235,8 @@
       "name": "hls",
       "name_source": "path",
       "verify_level": "segment",
-      "segment_size": 1182,
-      "segment_time": 0.253,
+      "segment_size": 4096,
+      "segment_time": 0.19,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -246,8 +246,8 @@
       "name": "hls",
       "name_source": "path",
       "verify_level": "segment",
-      "segment_size": 4038,
-      "segment_time": 0.261,
+      "segment_size": 1182,
+      "segment_time": 0.196,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -258,7 +258,7 @@
       "name_source": "path",
       "verify_level": "segment",
       "segment_size": 4096,
-      "segment_time": 0.255,
+      "segment_time": 0.195,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -269,7 +269,7 @@
       "name_source": "path",
       "verify_level": "segment",
       "segment_size": 4096,
-      "segment_time": 0.258,
+      "segment_time": 0.21,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -279,8 +279,8 @@
       "name": "hls",
       "name_source": "path",
       "verify_level": "segment",
-      "segment_size": 4096,
-      "segment_time": 0.278,
+      "segment_size": 2610,
+      "segment_time": 0.222,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -290,8 +290,8 @@
       "name": "hls",
       "name_source": "path",
       "verify_level": "segment",
-      "segment_size": 4096,
-      "segment_time": 0.275,
+      "segment_size": 2610,
+      "segment_time": 0.204,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -302,7 +302,7 @@
       "name_source": "path",
       "verify_level": "segment",
       "segment_size": 4096,
-      "segment_time": 0.241,
+      "segment_time": 0.225,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -312,8 +312,30 @@
       "name": "hls",
       "name_source": "path",
       "verify_level": "segment",
-      "segment_size": 4038,
-      "segment_time": 0.279,
+      "segment_size": 4096,
+      "segment_time": 0.218,
+      "referer": "http://183.129.255.66:8480/hls/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "source": "单测"
+    },
+    {
+      "url": "http://183.129.255.66:8480/hls/23/index.m3u8",
+      "name": "hls",
+      "name_source": "path",
+      "verify_level": "segment",
+      "segment_size": 4096,
+      "segment_time": 0.227,
+      "referer": "http://183.129.255.66:8480/hls/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "source": "单测"
+    },
+    {
+      "url": "http://183.129.255.66:8480/hls/24/index.m3u8",
+      "name": "hls",
+      "name_source": "path",
+      "verify_level": "segment",
+      "segment_size": 4096,
+      "segment_time": 0.213,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -324,7 +346,7 @@
       "name_source": "path",
       "verify_level": "segment",
       "segment_size": 4096,
-      "segment_time": 0.284,
+      "segment_time": 0.243,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -334,19 +356,8 @@
       "name": "hls",
       "name_source": "path",
       "verify_level": "segment",
-      "segment_size": 1182,
-      "segment_time": 0.249,
-      "referer": "http://183.129.255.66:8480/hls/",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "source": "单测"
-    },
-    {
-      "url": "http://183.129.255.66:8480/hls/27/index.m3u8",
-      "name": "hls",
-      "name_source": "path",
-      "verify_level": "segment",
-      "segment_size": 4096,
-      "segment_time": 0.967,
+      "segment_size": 4038,
+      "segment_time": 0.235,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -356,8 +367,8 @@
       "name": "hls",
       "name_source": "path",
       "verify_level": "segment",
-      "segment_size": 4038,
-      "segment_time": 0.28,
+      "segment_size": 2610,
+      "segment_time": 0.229,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -367,8 +378,8 @@
       "name": "hls",
       "name_source": "path",
       "verify_level": "segment",
-      "segment_size": 4096,
-      "segment_time": 1.034,
+      "segment_size": 1182,
+      "segment_time": 0.224,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -379,7 +390,7 @@
       "name_source": "path",
       "verify_level": "segment",
       "segment_size": 4096,
-      "segment_time": 0.247,
+      "segment_time": 0.208,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -389,19 +400,8 @@
       "name": "hls",
       "name_source": "path",
       "verify_level": "segment",
-      "segment_size": 2610,
-      "segment_time": 0.248,
-      "referer": "http://183.129.255.66:8480/hls/",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "source": "单测"
-    },
-    {
-      "url": "http://183.129.255.66:8480/hls/32/index.m3u8",
-      "name": "hls",
-      "name_source": "path",
-      "verify_level": "segment",
       "segment_size": 4096,
-      "segment_time": 0.241,
+      "segment_time": 0.219,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -412,7 +412,7 @@
       "name_source": "path",
       "verify_level": "segment",
       "segment_size": 4096,
-      "segment_time": 0.253,
+      "segment_time": 0.218,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -423,7 +423,7 @@
       "name_source": "path",
       "verify_level": "segment",
       "segment_size": 4096,
-      "segment_time": 0.267,
+      "segment_time": 0.193,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -433,8 +433,8 @@
       "name": "hls",
       "name_source": "path",
       "verify_level": "segment",
-      "segment_size": 2610,
-      "segment_time": 0.273,
+      "segment_size": 4096,
+      "segment_time": 0.208,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -445,7 +445,7 @@
       "name_source": "path",
       "verify_level": "segment",
       "segment_size": 4096,
-      "segment_time": 0.246,
+      "segment_time": 0.209,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -455,8 +455,8 @@
       "name": "hls",
       "name_source": "path",
       "verify_level": "segment",
-      "segment_size": 4096,
-      "segment_time": 0.247,
+      "segment_size": 2610,
+      "segment_time": 0.223,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -466,8 +466,8 @@
       "name": "hls",
       "name_source": "path",
       "verify_level": "segment",
-      "segment_size": 1182,
-      "segment_time": 0.248,
+      "segment_size": 4096,
+      "segment_time": 0.21,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -477,8 +477,8 @@
       "name": "hls",
       "name_source": "path",
       "verify_level": "segment",
-      "segment_size": 4096,
-      "segment_time": 0.25,
+      "segment_size": 4038,
+      "segment_time": 0.22,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -488,8 +488,8 @@
       "name": "hls",
       "name_source": "path",
       "verify_level": "segment",
-      "segment_size": 4038,
-      "segment_time": 1.074,
+      "segment_size": 4096,
+      "segment_time": 0.209,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -499,8 +499,8 @@
       "name": "hls",
       "name_source": "path",
       "verify_level": "segment",
-      "segment_size": 2610,
-      "segment_time": 0.262,
+      "segment_size": 1182,
+      "segment_time": 0.219,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -511,7 +511,18 @@
       "name_source": "path",
       "verify_level": "segment",
       "segment_size": 4096,
-      "segment_time": 0.259,
+      "segment_time": 0.189,
+      "referer": "http://183.129.255.66:8480/hls/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "source": "单测"
+    },
+    {
+      "url": "http://183.129.255.66:8480/hls/43/index.m3u8",
+      "name": "hls",
+      "name_source": "path",
+      "verify_level": "segment",
+      "segment_size": 2610,
+      "segment_time": 0.235,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -522,7 +533,7 @@
       "name_source": "path",
       "verify_level": "segment",
       "segment_size": 4096,
-      "segment_time": 0.264,
+      "segment_time": 0.213,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -533,7 +544,7 @@
       "name_source": "path",
       "verify_level": "segment",
       "segment_size": 4096,
-      "segment_time": 0.246,
+      "segment_time": 0.213,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -544,7 +555,7 @@
       "name_source": "path",
       "verify_level": "segment",
       "segment_size": 2610,
-      "segment_time": 0.253,
+      "segment_time": 0.217,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -555,7 +566,18 @@
       "name_source": "path",
       "verify_level": "segment",
       "segment_size": 4096,
-      "segment_time": 0.263,
+      "segment_time": 0.194,
+      "referer": "http://183.129.255.66:8480/hls/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "source": "单测"
+    },
+    {
+      "url": "http://183.129.255.66:8480/hls/48/index.m3u8",
+      "name": "hls",
+      "name_source": "path",
+      "verify_level": "segment",
+      "segment_size": 4096,
+      "segment_time": 0.216,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -565,8 +587,8 @@
       "name": "hls",
       "name_source": "path",
       "verify_level": "segment",
-      "segment_size": 4096,
-      "segment_time": 0.254,
+      "segment_size": 1182,
+      "segment_time": 0.213,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
@@ -577,7 +599,7 @@
       "name_source": "path",
       "verify_level": "segment",
       "segment_size": 2610,
-      "segment_time": 0.254,
+      "segment_time": 0.213,
       "referer": "http://183.129.255.66:8480/hls/",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "source": "单测"
