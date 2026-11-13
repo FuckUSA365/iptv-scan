@@ -1,36 +1,398 @@
 {
-  "verify_time": "2026-11-12T12:16:06.831597Z",
+  "verify_time": "2026-11-13T11:54:41.681134Z",
   "input": "output/playlist.m3u",
   "input_kind": "local",
   "strict_mode": false,
   "concurrency": 15,
-  "elapsed_seconds": 43.75,
+  "elapsed_seconds": 11.44,
   "total": 47,
-  "playable": 0,
-  "failed": 47,
-  "output": 0,
-  "by_verify_level": {},
+  "playable": 42,
+  "failed": 5,
+  "output": 42,
+  "by_verify_level": {
+    "segment": 42
+  },
   "failure_reasons": {
-    "m3u8失败:超时": 47
+    "分片HTTP404": 5
   },
   "channels": [
     {
       "name": "hls",
       "group": "单测",
       "url": "http://183.129.255.66:8480/hls/1/index.m3u8",
-      "playable": false,
-      "verify_level": null,
-      "reason": "m3u8失败:超时",
-      "segment_time": 0.0
+      "playable": true,
+      "verify_level": "segment",
+      "reason": "ok",
+      "segment_time": 0.225
     },
     {
       "name": "hls",
       "group": "单测",
       "url": "http://183.129.255.66:8480/hls/2/index.m3u8",
-      "playable": false,
-      "verify_level": null,
-      "reason": "m3u8失败:超时",
-      "segment_time": 0.0
+      "playable": true,
+      "verify_level": "segment",
+      "reason": "ok",
+      "segment_time": 0.212
+    },
+    {
+      "name": "hls",
+      "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/4/index.m3u8",
+      "playable": true,
+      "verify_level": "segment",
+      "reason": "ok",
+      "segment_time": 0.84
+    },
+    {
+      "name": "hls",
+      "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/5/index.m3u8",
+      "playable": true,
+      "verify_level": "segment",
+      "reason": "ok",
+      "segment_time": 0.217
+    },
+    {
+      "name": "hls",
+      "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/7/index.m3u8",
+      "playable": true,
+      "verify_level": "segment",
+      "reason": "ok",
+      "segment_time": 0.228
+    },
+    {
+      "name": "hls",
+      "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/8/index.m3u8",
+      "playable": true,
+      "verify_level": "segment",
+      "reason": "ok",
+      "segment_time": 0.861
+    },
+    {
+      "name": "hls",
+      "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/9/index.m3u8",
+      "playable": true,
+      "verify_level": "segment",
+      "reason": "ok",
+      "segment_time": 0.884
+    },
+    {
+      "name": "hls",
+      "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/10/index.m3u8",
+      "playable": true,
+      "verify_level": "segment",
+      "reason": "ok",
+      "segment_time": 0.217
+    },
+    {
+      "name": "hls",
+      "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/11/index.m3u8",
+      "playable": true,
+      "verify_level": "segment",
+      "reason": "ok",
+      "segment_time": 0.216
+    },
+    {
+      "name": "hls",
+      "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/12/index.m3u8",
+      "playable": true,
+      "verify_level": "segment",
+      "reason": "ok",
+      "segment_time": 0.212
+    },
+    {
+      "name": "hls",
+      "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/13/index.m3u8",
+      "playable": true,
+      "verify_level": "segment",
+      "reason": "ok",
+      "segment_time": 0.224
+    },
+    {
+      "name": "hls",
+      "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/14/index.m3u8",
+      "playable": true,
+      "verify_level": "segment",
+      "reason": "ok",
+      "segment_time": 0.215
+    },
+    {
+      "name": "hls",
+      "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/15/index.m3u8",
+      "playable": true,
+      "verify_level": "segment",
+      "reason": "ok",
+      "segment_time": 0.428
+    },
+    {
+      "name": "hls",
+      "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/16/index.m3u8",
+      "playable": true,
+      "verify_level": "segment",
+      "reason": "ok",
+      "segment_time": 0.209
+    },
+    {
+      "name": "hls",
+      "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/17/index.m3u8",
+      "playable": true,
+      "verify_level": "segment",
+      "reason": "ok",
+      "segment_time": 0.212
+    },
+    {
+      "name": "hls",
+      "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/19/index.m3u8",
+      "playable": true,
+      "verify_level": "segment",
+      "reason": "ok",
+      "segment_time": 0.227
+    },
+    {
+      "name": "hls",
+      "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/20/index.m3u8",
+      "playable": true,
+      "verify_level": "segment",
+      "reason": "ok",
+      "segment_time": 0.888
+    },
+    {
+      "name": "hls",
+      "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/22/index.m3u8",
+      "playable": true,
+      "verify_level": "segment",
+      "reason": "ok",
+      "segment_time": 0.214
+    },
+    {
+      "name": "hls",
+      "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/23/index.m3u8",
+      "playable": true,
+      "verify_level": "segment",
+      "reason": "ok",
+      "segment_time": 0.21
+    },
+    {
+      "name": "hls",
+      "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/26/index.m3u8",
+      "playable": true,
+      "verify_level": "segment",
+      "reason": "ok",
+      "segment_time": 0.223
+    },
+    {
+      "name": "hls",
+      "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/27/index.m3u8",
+      "playable": true,
+      "verify_level": "segment",
+      "reason": "ok",
+      "segment_time": 0.23
+    },
+    {
+      "name": "hls",
+      "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/28/index.m3u8",
+      "playable": true,
+      "verify_level": "segment",
+      "reason": "ok",
+      "segment_time": 0.918
+    },
+    {
+      "name": "hls",
+      "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/29/index.m3u8",
+      "playable": true,
+      "verify_level": "segment",
+      "reason": "ok",
+      "segment_time": 0.413
+    },
+    {
+      "name": "hls",
+      "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/30/index.m3u8",
+      "playable": true,
+      "verify_level": "segment",
+      "reason": "ok",
+      "segment_time": 0.231
+    },
+    {
+      "name": "hls",
+      "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/31/index.m3u8",
+      "playable": true,
+      "verify_level": "segment",
+      "reason": "ok",
+      "segment_time": 0.207
+    },
+    {
+      "name": "hls",
+      "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/32/index.m3u8",
+      "playable": true,
+      "verify_level": "segment",
+      "reason": "ok",
+      "segment_time": 0.214
+    },
+    {
+      "name": "hls",
+      "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/34/index.m3u8",
+      "playable": true,
+      "verify_level": "segment",
+      "reason": "ok",
+      "segment_time": 0.219
+    },
+    {
+      "name": "hls",
+      "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/35/index.m3u8",
+      "playable": true,
+      "verify_level": "segment",
+      "reason": "ok",
+      "segment_time": 0.419
+    },
+    {
+      "name": "hls",
+      "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/36/index.m3u8",
+      "playable": true,
+      "verify_level": "segment",
+      "reason": "ok",
+      "segment_time": 0.213
+    },
+    {
+      "name": "hls",
+      "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/37/index.m3u8",
+      "playable": true,
+      "verify_level": "segment",
+      "reason": "ok",
+      "segment_time": 0.925
+    },
+    {
+      "name": "hls",
+      "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/38/index.m3u8",
+      "playable": true,
+      "verify_level": "segment",
+      "reason": "ok",
+      "segment_time": 0.215
+    },
+    {
+      "name": "hls",
+      "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/40/index.m3u8",
+      "playable": true,
+      "verify_level": "segment",
+      "reason": "ok",
+      "segment_time": 0.823
+    },
+    {
+      "name": "hls",
+      "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/41/index.m3u8",
+      "playable": true,
+      "verify_level": "segment",
+      "reason": "ok",
+      "segment_time": 0.229
+    },
+    {
+      "name": "hls",
+      "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/42/index.m3u8",
+      "playable": true,
+      "verify_level": "segment",
+      "reason": "ok",
+      "segment_time": 0.223
+    },
+    {
+      "name": "hls",
+      "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/43/index.m3u8",
+      "playable": true,
+      "verify_level": "segment",
+      "reason": "ok",
+      "segment_time": 0.213
+    },
+    {
+      "name": "hls",
+      "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/44/index.m3u8",
+      "playable": true,
+      "verify_level": "segment",
+      "reason": "ok",
+      "segment_time": 0.865
+    },
+    {
+      "name": "hls",
+      "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/45/index.m3u8",
+      "playable": true,
+      "verify_level": "segment",
+      "reason": "ok",
+      "segment_time": 0.221
+    },
+    {
+      "name": "hls",
+      "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/46/index.m3u8",
+      "playable": true,
+      "verify_level": "segment",
+      "reason": "ok",
+      "segment_time": 0.217
+    },
+    {
+      "name": "hls",
+      "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/47/index.m3u8",
+      "playable": true,
+      "verify_level": "segment",
+      "reason": "ok",
+      "segment_time": 0.205
+    },
+    {
+      "name": "hls",
+      "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/48/index.m3u8",
+      "playable": true,
+      "verify_level": "segment",
+      "reason": "ok",
+      "segment_time": 0.874
+    },
+    {
+      "name": "hls",
+      "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/49/index.m3u8",
+      "playable": true,
+      "verify_level": "segment",
+      "reason": "ok",
+      "segment_time": 0.199
+    },
+    {
+      "name": "hls",
+      "group": "单测",
+      "url": "http://183.129.255.66:8480/hls/50/index.m3u8",
+      "playable": true,
+      "verify_level": "segment",
+      "reason": "ok",
+      "segment_time": 0.21
     },
     {
       "name": "hls",
@@ -38,178 +400,16 @@
       "url": "http://183.129.255.66:8480/hls/3/index.m3u8",
       "playable": false,
       "verify_level": null,
-      "reason": "m3u8失败:超时",
+      "reason": "分片HTTP404",
       "segment_time": 0.0
     },
     {
       "name": "hls",
       "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/4/index.m3u8",
+      "url": "http://183.129.255.66:8480/hls/18/index.m3u8",
       "playable": false,
       "verify_level": null,
-      "reason": "m3u8失败:超时",
-      "segment_time": 0.0
-    },
-    {
-      "name": "hls",
-      "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/5/index.m3u8",
-      "playable": false,
-      "verify_level": null,
-      "reason": "m3u8失败:超时",
-      "segment_time": 0.0
-    },
-    {
-      "name": "hls",
-      "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/6/index.m3u8",
-      "playable": false,
-      "verify_level": null,
-      "reason": "m3u8失败:超时",
-      "segment_time": 0.0
-    },
-    {
-      "name": "hls",
-      "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/7/index.m3u8",
-      "playable": false,
-      "verify_level": null,
-      "reason": "m3u8失败:超时",
-      "segment_time": 0.0
-    },
-    {
-      "name": "hls",
-      "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/8/index.m3u8",
-      "playable": false,
-      "verify_level": null,
-      "reason": "m3u8失败:超时",
-      "segment_time": 0.0
-    },
-    {
-      "name": "hls",
-      "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/9/index.m3u8",
-      "playable": false,
-      "verify_level": null,
-      "reason": "m3u8失败:超时",
-      "segment_time": 0.0
-    },
-    {
-      "name": "hls",
-      "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/10/index.m3u8",
-      "playable": false,
-      "verify_level": null,
-      "reason": "m3u8失败:超时",
-      "segment_time": 0.0
-    },
-    {
-      "name": "hls",
-      "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/11/index.m3u8",
-      "playable": false,
-      "verify_level": null,
-      "reason": "m3u8失败:超时",
-      "segment_time": 0.0
-    },
-    {
-      "name": "hls",
-      "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/12/index.m3u8",
-      "playable": false,
-      "verify_level": null,
-      "reason": "m3u8失败:超时",
-      "segment_time": 0.0
-    },
-    {
-      "name": "hls",
-      "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/13/index.m3u8",
-      "playable": false,
-      "verify_level": null,
-      "reason": "m3u8失败:超时",
-      "segment_time": 0.0
-    },
-    {
-      "name": "hls",
-      "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/14/index.m3u8",
-      "playable": false,
-      "verify_level": null,
-      "reason": "m3u8失败:超时",
-      "segment_time": 0.0
-    },
-    {
-      "name": "hls",
-      "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/15/index.m3u8",
-      "playable": false,
-      "verify_level": null,
-      "reason": "m3u8失败:超时",
-      "segment_time": 0.0
-    },
-    {
-      "name": "hls",
-      "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/16/index.m3u8",
-      "playable": false,
-      "verify_level": null,
-      "reason": "m3u8失败:超时",
-      "segment_time": 0.0
-    },
-    {
-      "name": "hls",
-      "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/17/index.m3u8",
-      "playable": false,
-      "verify_level": null,
-      "reason": "m3u8失败:超时",
-      "segment_time": 0.0
-    },
-    {
-      "name": "hls",
-      "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/19/index.m3u8",
-      "playable": false,
-      "verify_level": null,
-      "reason": "m3u8失败:超时",
-      "segment_time": 0.0
-    },
-    {
-      "name": "hls",
-      "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/20/index.m3u8",
-      "playable": false,
-      "verify_level": null,
-      "reason": "m3u8失败:超时",
-      "segment_time": 0.0
-    },
-    {
-      "name": "hls",
-      "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/21/index.m3u8",
-      "playable": false,
-      "verify_level": null,
-      "reason": "m3u8失败:超时",
-      "segment_time": 0.0
-    },
-    {
-      "name": "hls",
-      "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/22/index.m3u8",
-      "playable": false,
-      "verify_level": null,
-      "reason": "m3u8失败:超时",
-      "segment_time": 0.0
-    },
-    {
-      "name": "hls",
-      "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/23/index.m3u8",
-      "playable": false,
-      "verify_level": null,
-      "reason": "m3u8失败:超时",
+      "reason": "分片HTTP404",
       "segment_time": 0.0
     },
     {
@@ -218,7 +418,7 @@
       "url": "http://183.129.255.66:8480/hls/24/index.m3u8",
       "playable": false,
       "verify_level": null,
-      "reason": "m3u8失败:超时",
+      "reason": "分片HTTP404",
       "segment_time": 0.0
     },
     {
@@ -227,70 +427,7 @@
       "url": "http://183.129.255.66:8480/hls/25/index.m3u8",
       "playable": false,
       "verify_level": null,
-      "reason": "m3u8失败:超时",
-      "segment_time": 0.0
-    },
-    {
-      "name": "hls",
-      "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/26/index.m3u8",
-      "playable": false,
-      "verify_level": null,
-      "reason": "m3u8失败:超时",
-      "segment_time": 0.0
-    },
-    {
-      "name": "hls",
-      "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/27/index.m3u8",
-      "playable": false,
-      "verify_level": null,
-      "reason": "m3u8失败:超时",
-      "segment_time": 0.0
-    },
-    {
-      "name": "hls",
-      "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/28/index.m3u8",
-      "playable": false,
-      "verify_level": null,
-      "reason": "m3u8失败:超时",
-      "segment_time": 0.0
-    },
-    {
-      "name": "hls",
-      "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/29/index.m3u8",
-      "playable": false,
-      "verify_level": null,
-      "reason": "m3u8失败:超时",
-      "segment_time": 0.0
-    },
-    {
-      "name": "hls",
-      "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/30/index.m3u8",
-      "playable": false,
-      "verify_level": null,
-      "reason": "m3u8失败:超时",
-      "segment_time": 0.0
-    },
-    {
-      "name": "hls",
-      "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/31/index.m3u8",
-      "playable": false,
-      "verify_level": null,
-      "reason": "m3u8失败:超时",
-      "segment_time": 0.0
-    },
-    {
-      "name": "hls",
-      "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/32/index.m3u8",
-      "playable": false,
-      "verify_level": null,
-      "reason": "m3u8失败:超时",
+      "reason": "分片HTTP404",
       "segment_time": 0.0
     },
     {
@@ -299,142 +436,7 @@
       "url": "http://183.129.255.66:8480/hls/33/index.m3u8",
       "playable": false,
       "verify_level": null,
-      "reason": "m3u8失败:超时",
-      "segment_time": 0.0
-    },
-    {
-      "name": "hls",
-      "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/34/index.m3u8",
-      "playable": false,
-      "verify_level": null,
-      "reason": "m3u8失败:超时",
-      "segment_time": 0.0
-    },
-    {
-      "name": "hls",
-      "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/35/index.m3u8",
-      "playable": false,
-      "verify_level": null,
-      "reason": "m3u8失败:超时",
-      "segment_time": 0.0
-    },
-    {
-      "name": "hls",
-      "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/36/index.m3u8",
-      "playable": false,
-      "verify_level": null,
-      "reason": "m3u8失败:超时",
-      "segment_time": 0.0
-    },
-    {
-      "name": "hls",
-      "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/37/index.m3u8",
-      "playable": false,
-      "verify_level": null,
-      "reason": "m3u8失败:超时",
-      "segment_time": 0.0
-    },
-    {
-      "name": "hls",
-      "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/38/index.m3u8",
-      "playable": false,
-      "verify_level": null,
-      "reason": "m3u8失败:超时",
-      "segment_time": 0.0
-    },
-    {
-      "name": "hls",
-      "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/39/index.m3u8",
-      "playable": false,
-      "verify_level": null,
-      "reason": "m3u8失败:超时",
-      "segment_time": 0.0
-    },
-    {
-      "name": "hls",
-      "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/40/index.m3u8",
-      "playable": false,
-      "verify_level": null,
-      "reason": "m3u8失败:超时",
-      "segment_time": 0.0
-    },
-    {
-      "name": "hls",
-      "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/41/index.m3u8",
-      "playable": false,
-      "verify_level": null,
-      "reason": "m3u8失败:超时",
-      "segment_time": 0.0
-    },
-    {
-      "name": "hls",
-      "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/42/index.m3u8",
-      "playable": false,
-      "verify_level": null,
-      "reason": "m3u8失败:超时",
-      "segment_time": 0.0
-    },
-    {
-      "name": "hls",
-      "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/45/index.m3u8",
-      "playable": false,
-      "verify_level": null,
-      "reason": "m3u8失败:超时",
-      "segment_time": 0.0
-    },
-    {
-      "name": "hls",
-      "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/46/index.m3u8",
-      "playable": false,
-      "verify_level": null,
-      "reason": "m3u8失败:超时",
-      "segment_time": 0.0
-    },
-    {
-      "name": "hls",
-      "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/47/index.m3u8",
-      "playable": false,
-      "verify_level": null,
-      "reason": "m3u8失败:超时",
-      "segment_time": 0.0
-    },
-    {
-      "name": "hls",
-      "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/48/index.m3u8",
-      "playable": false,
-      "verify_level": null,
-      "reason": "m3u8失败:超时",
-      "segment_time": 0.0
-    },
-    {
-      "name": "hls",
-      "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/49/index.m3u8",
-      "playable": false,
-      "verify_level": null,
-      "reason": "m3u8失败:超时",
-      "segment_time": 0.0
-    },
-    {
-      "name": "hls",
-      "group": "单测",
-      "url": "http://183.129.255.66:8480/hls/50/index.m3u8",
-      "playable": false,
-      "verify_level": null,
-      "reason": "m3u8失败:超时",
+      "reason": "分片HTTP404",
       "segment_time": 0.0
     }
   ]
